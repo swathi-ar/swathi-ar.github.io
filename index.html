@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swathi AR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Swathi Anaji Revanasiddappa</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#education">Education</a></li> -->
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Swathi AR</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <!-- <li><a href="#education" onclick="toggleMenu()">Education</a></li> -->
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/swathi.jpg" alt="Swathi AR" class="profile-pic">
+        </div>
+        <div class="section__text typewriter">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Swathi Anaji Revanasiddappa</h1>
+            <p class="section__text__p2">Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Swathi_AR_Resume_Dec2023.pdf')">Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="window.open('https://www.linkedin.com/in/swathi-anaji-r/')">
+                <img src="./assets/github.png" alt="GitHub" class="icon" onclick="window.open('https://github.com/swathi-ar')">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <!-- <p class="section__text__p1">Get To Know More</p> -->
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <!-- <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic">
+            </div> -->
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>I'm Swathi Anaji Revanasiddappa, a passionate software engineer currently pursuing Master's degree in Software Engineering from Arizona State University. With a strong foundation in both academia and industry, I bring expertise in a variety of programming languages and tools, including Python, SQL, and HTML/CSS. My experience at Accenture has honed my leadership skills and allowed me to spearhead innovative solutions in the realm of DevSecOps integration and application security. I thrive on tackling complex challenges and am committed to continuous learning and growth in the dynamic field of software engineering.</p>
+                </div>
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2>Education</h2>
+                        <div class="college">
+                            <!-- <div class="education-image">
+                                <img src="./assets/asu.png" alt="Education">
+                            </div> -->
+                            <div class="college-details">
+                                <span class="timeline">August 2023 - Present</span>
+                                <h3>Arizona State University, Poly, Arizona</h3>
+                                <p>Master of Science in Software Engineering • GPA: 3.89/4.0</p>
+                            </div>
+                        </div>
+                        <div class="college">
+                            <!-- <div class="education-image">
+                                <img src="./assets/nitw.png" alt="Education">
+                            </div> -->
+                            <div class="college-details">
+                                <span class="timeline">August 2015 - May 2018</span>
+                                <h3>R V College of Engineering, Bengaluru, India</h3>
+                                <p>B.E. in Electronics and Telecommunication • GPA: 7.27/10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2>Work Experience</h2>
+                        <div class="college">
+                            <!-- <div class="education-image">
+                                <img src="./assets/asu.png" alt="Education">
+                            </div> -->
+                            <div class="college-details">
+                                <span class="timeline">October 2020 - June 2023</span>
+                                <h3>Accenture, Bengaluru, India</h3>
+                                <p>Senior Software Engineer • Full-Time • Security</p>
+                            </div>
+                        </div>
+                        <div class="college">
+                            <!-- <div class="education-image">
+                                <img src="./assets/nitw.png" alt="Education">
+                            </div> -->
+                            <div class="college-details">
+                                <span class="timeline">August 2018 - October 2020</span>
+                                <h3>Accenture, Bengaluru, India</h3>
+                                <p>Software Engineer • Full-Time • Security</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <!-- <p class="section__text__p1">Explore My</p> -->
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <!-- <h2 class="experience-sub-title">Programming Languages</h2> -->
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/python.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                            </div>
+                        </article>
+                        <!-- <article>
+                            <img src="./assets/cpp_logo.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>C++</h3>
+                            </div>
+                        </article> -->
+                        <!-- <article>
+                            <img src="./assets/ruby.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Ruby</h3>
+                            </div>
+                        </article> -->
+                        <article>
+                            <img src="./assets/JavaScript-logo.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/c_logo.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>C</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/java.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/cobol.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Cobol</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/jcl.Default" alt="experience icon" class="icon">
+                            <div>
+                                <h3>JCL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/mysql.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/postgres.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>PostgreSQL</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/html.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>HTML5</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/css.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/bootstrap.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Bootstrap</h3>
+                            </div>
+                        </article>
+                        <!-- <article>
+                            <img src="./assets/mongo.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>MongoDB</h3>
+                            </div>
+                        </article> -->
+                        <!-- <article>
+                            <img src="./assets/rails.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Ruby on Rails</h3>
+                            </div>
+                        </article> -->
+                        <article>
+                            <img src="./assets/flask.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Flask</h3>
+                            </div>
+                        </article>
+                        <!-- <article>
+                            <img src="./assets/django.webp" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Django</h3>
+                            </div>
+                        </article> -->
+                        <article>
+                            <img src="./assets/react.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>React</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/angular.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Angular</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/git.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/github.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>GitHub</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/vscode.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>VS Code</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/jira.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Jira</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/selenium.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Selenium</h3>
+                            </div>
+                        </article>
+                        <!-- <article>
+                            <img src="./assets/tensorflow.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>TensorFlow</h3>
+                            </div>
+                        </article> -->
+                        <article>
+                            <img src="./assets/linux.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Linux</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/burp-suite.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Burp Suite</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/veracode.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Veracode</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/hcl-appscan.webp" alt="experience icon" class="icon">
+                            <div>
+                                <h3>HCL Appscan</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/asoc.webp" alt="experience icon" class="icon">
+                            <div>
+                                <h3>ASOC</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/threadfix.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>ThreadFix</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <!-- <p class="section__text__p1">Browse My</p> -->
+        <h1 class="title" style="margin-bottom: 1.5rem;">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <!-- <div class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">Stance Detection</h2>
+                    <div class="article-container">
+                        <img src="./assets/stance_detection.png" alt="Stance Detection" class="project-img">
+                    </div>
+                    <div class="project-details">
+                        Developed 40 classifiers utilizing a curated dataset of 14.3 million tweets to detect user stances, showcasing expertise in advanced machine learning techniques for social media analytics.
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/harshit-asu/Stance-Detection')">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                    </div>
+                </div> -->
+                <div class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">Smart Healthcare System using IoT</h2>
+                    <div class="article-container">
+                        <img src="./assets/smart-healthcare-system.png" alt="Smart Healthcare System" class="project-img">
+                    </div>
+                    <div class="project-details">
+                        Engineered a self-regulating healthcare ecosystem incorporating RFID-based user detection, voice-guided medication prompts, and remote health assessments with seamless control and monitoring through a Python-driven Android app.
+                    </div>
+                    <!-- <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                    </div> -->
+                </div>
+                <div class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">E-Cradle</h2>
+                    <div class="article-container">
+                        <img src="./assets/ecradle.png" alt="E-Cradle" class="project-img">
+                    </div>
+                    <div class="project-details">
+                        Formulated an intelligent cradle system equipped with self-activating swinging and cry detection capabilities, bolstered by real-time video surveillance; Presented a technical paper detailing the innovation of this project at <strong>ICECA Conference 2018</strong>.
+                    </div>
+                    <!-- <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                    </div> -->
+                </div>
+                <!-- <div class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">Family Expense Tracker</h2>
+                    <div class="article-container">
+                        <img src="./assets/fet.jpg" alt="Family Expense Tracker" class="project-img">
+                    </div>
+                    <div class="project-details">
+                        A Python Flask web app for family financial management, facilitating wallet tracking and transactions with user-friendly family account features.
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://drive.google.com/file/d/19jPZRUf0NF4I3qEtGwWCeR_CwIb1P2rt/view?usp=sharing')">Live Demo</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <!-- <p class="section__text__p1">Get In Touch</p> -->
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:srevanas@asu.edu">srevanas@asu.edu</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/mobile.png" alt="Mobile icon" class="icon contact-icon email-icon">
+                <p><a href="tel:+1602-662-8068">+1 (602) 662-8068</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/swathi-anaji-r/">linkedin.com/in/swathi-anaji-r</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#education">Education</a></li> -->
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Swathi AR. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
